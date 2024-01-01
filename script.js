@@ -12,7 +12,7 @@ var symbols = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
 
 //Created variables that promt users to input numeral(s)
 function generatePassword() {
-  var passwordSelection = [];
+  var passwordOptions = [];
   var passwordLength = Number(prompt ("Choose character numer 8-128"));
   
   
@@ -22,37 +22,38 @@ function generatePassword() {
     return;
   }
   else {
-    var upperConfirm = confirm("Include uppercase letters?");
-    var lowerConfirm = confirm("Include lowercase letters?");
+    var uppercaseConfirm = confirm("Include uppercase letters?");
+    var lowercaseConfirm = confirm("Include lowercase letters?");
     var numeralsConfirm = confirm("Include numerals?");
     var symbolsConfirm = confirm("Include special characters?");
   }
-  if (!upperConfirm && !lowerConfirm && !numeralsConfirm && !symbolsConfirm) {
+
+  if (!uppercaseConfirm && !lowercaseConfirm && !numeralsConfirm && !symbolsConfirm) {
     alert("Please select at least one character type")
     return;
   } 
 
   //Created if statements with concat for variables referring back to passwordSelection 
-  if (upperConfirm) {
-    var passwordSelection = passwordSelection.concat (uppercase);
+  if (uppercaseConfirm) {
+    var passwordOptions = passwordOptions.concat (uppercase);
   }
 
-  if (lowerConfirm) {
-    var passwordSelection = passwordSelection.concat (lowercase);
+  if (lowercaseConfirm) {
+    var passwordOptions = passwordOptions.concat (lowercase);
   }
 
   if (numeralsConfirm) {
-    var passwordSelection = passwordSelection.concat (numerals);
+    var passwordOptions = passwordOptions.concat (numerals);
   }
 
   if (symbolsConfirm) {
-    var passwordSelection = passwordSelection.concat (symbols);
+    var passwordOptions = passwordOptions.concat (symbols);
   } 
   //Created loop for computer to generate random password
   var newPassword = []
   for (let i = 0; i < passwordLength; i++) {
-    var x = Math.floor(Math.random() * passwordSelection.length);
-    var newPassword = newPassword.concat (passwordSelection[x])
+    var x = Math.floor(Math.random() * passwordOptions.length);
+    var newPassword = newPassword.concat (passwordOptions[x])
   }
   return (newPassword = newPassword.join(""))
 }

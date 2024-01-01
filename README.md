@@ -22,6 +22,7 @@ Here is a link to my deployed application:
 
 ## Credits
  Information and tutorials from:
+ 
 -https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN
 
 -httP://www.w3schools.com

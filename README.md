@@ -23,8 +23,11 @@ Here is a link to my deployed application:
 ## Credits
  Information and tutorials from:
 -https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN
+
 -httP://www.w3schools.com
+
 -Net Ninja online JavaScript Tutorial for beginnger: https://www.youtube.com/playlist?list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET
+
 
 Checked code against pubished gitHub pages:
 -https://github.com/fmiusov/passwordGenerator/tree/master

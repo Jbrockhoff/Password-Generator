@@ -4,7 +4,7 @@
 var generateBtn = document.querySelector("#generate");
 var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" ];
 var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-var numerals = [1234567890];
+var numerals = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 var symbols = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
 
 
@@ -15,7 +15,7 @@ function generatePassword() {
   var passwordLength = Number(prompt ("Choose character numer 8-128"));
   
   
-  //Created parameters for character length and rules for no client selection
+//Created parameters for character length and rules for no client selection
   if (isNaN(passwordLength) || (passwordLength < 8) || (passwordLength > 128)) {
     alert("Please select a number between 8-128")
     return;
@@ -31,7 +31,7 @@ function generatePassword() {
     return;
   } 
 
-  //Created if statements with concat for variables 
+  //Created if statements with concat for variables referring back to passwordSelection 
   if (upperConfirm) {
     var passwordSelection = passwordSelection.concat (uppercase);
   }
@@ -47,13 +47,13 @@ function generatePassword() {
   if (symbolsConfirm) {
     var passwordSelection = passwordSelection.concat (symbols);
   } 
-  
-
-  //var newPassword = []
-  //for (let index = 0; index < array.length; index++) {
-    //const element = array[index];
-    
-  //}
+  //Created loop for computer to generate random password
+  var newPassword = []
+  for (let i = 0; i < passwordLength; i++) {
+    var x = Math.floor(Math.random() * passwordSelection.length);
+    var newPassword = newPassword.concat (passwordSelection[x])
+  }
+  return (newPassword = newPassword.join(""))
 
 }
 function writePassword() {    

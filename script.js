@@ -1,6 +1,6 @@
 // Assignment Code
 
-//presented choice arrays under the first variable
+//presented choice arrays under the first variable. Deleted console.log when completed
 var generateBtn = document.querySelector("#generate");
 var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" ];
 var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -9,6 +9,7 @@ var symbols = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
 
 
 // Write password to the #password input
+
 //Created variables that promt users to input numeral(s)
 function generatePassword() {
   var passwordSelection = [];
@@ -54,8 +55,8 @@ function generatePassword() {
     var newPassword = newPassword.concat (passwordSelection[x])
   }
   return (newPassword = newPassword.join(""))
-
 }
+
 function writePassword() {    
   var password = generatePassword(); 
   var passwordText = document.querySelector("#password");

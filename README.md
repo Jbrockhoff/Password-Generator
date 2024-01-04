@@ -30,12 +30,6 @@ https://jbrockhoff.github.io/Password-Generator/
 
 -Net Ninja online JavaScript Tutorial for beginnger: https://www.youtube.com/playlist?list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET
 
-
-Checked code against pubished gitHub pages:
--https://github.com/fmiusov/passwordGenerator/tree/master
--https://github.com/ariehh1/JavaScript-Password-Generator/tree/master
-
-
 ## License
 
 MIT License

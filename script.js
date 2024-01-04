@@ -13,7 +13,7 @@ var symbols = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
 //Created variables that promt users to input numeral(s)
 function generatePassword() {
   var passwordOptions = [];
-  var passwordLength = Number(prompt ("Choose character numer 8-128"));
+  var passwordLength = Number(prompt ("Choose password length 8-128"));
   
   
 //Created parameters for character length and rules for no client selection
@@ -21,32 +21,33 @@ function generatePassword() {
     alert("Please select a number between 8-128")
     return;
   }
+  
   else {
-    var uppercaseConfirm = confirm("Include uppercase letters?");
-    var lowercaseConfirm = confirm("Include lowercase letters?");
-    var numeralsConfirm = confirm("Include numerals?");
-    var symbolsConfirm = confirm("Include special characters?");
+    uppercaseSelection = confirm("Include uppercase letters?");
+    lowercaseSelection = confirm("Include lowercase letters?");
+    numeralsSelection = confirm("Include numerals?");
+    symbolsSelection = confirm("Include special characters?");
   }
 
-  if (!uppercaseConfirm && !lowercaseConfirm && !numeralsConfirm && !symbolsConfirm) {
+  if (!uppercaseSelection && !lowercaseSelection && !numeralsSelection && !symbolsSelection) {
     alert("Please select at least one character type")
     return;
   } 
 
   //Created if statements with concat for variables referring back to passwordSelection 
-  if (uppercaseConfirm) {
+  if (uppercaseSelection) {
     var passwordOptions = passwordOptions.concat (uppercase);
   }
 
-  if (lowercaseConfirm) {
+  if (lowercaseSelection) {
     var passwordOptions = passwordOptions.concat (lowercase);
   }
 
-  if (numeralsConfirm) {
+  if (numeralsSelection) {
     var passwordOptions = passwordOptions.concat (numerals);
   }
 
-  if (symbolsConfirm) {
+  if (symbolsSelection) {
     var passwordOptions = passwordOptions.concat (symbols);
   } 
   //Created loop for computer to generate random password
@@ -58,6 +59,7 @@ function generatePassword() {
   return (newPassword = newPassword.join(""))
 }
 
+//Write password to the #password input
 function writePassword() {    
   var password = generatePassword(); 
   var passwordText = document.querySelector("#password");

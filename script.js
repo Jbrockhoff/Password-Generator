@@ -21,7 +21,7 @@ function generatePassword() {
     alert("Please select a number between 8-128")
     return;
   }
-  
+
   else {
     uppercaseSelection = confirm("Include uppercase letters?");
     lowercaseSelection = confirm("Include lowercase letters?");

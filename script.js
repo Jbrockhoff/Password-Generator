@@ -1,14 +1,9 @@
-// Assignment Code
-
-//presented choice arrays under the first variable. Deleted console.log when completed
+//Presented choice arrays under the first variable. Deleted console.log when completed
 var generateBtn = document.querySelector("#generate");
 var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" ];
 var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var numerals = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 var symbols = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")"];
-
-
-// Write password to the #password input
 
 //Created variables that promt users to input numeral(s)
 function generatePassword() {
@@ -29,27 +24,30 @@ function generatePassword() {
     symbolsSelection = confirm("Include special characters?");
   }
 
+  //Created conditional statement in the event client makes no selection when prompted
   if (!uppercaseSelection && !lowercaseSelection && !numeralsSelection && !symbolsSelection) {
     alert("Please select at least one character type")
     return;
   } 
 
   //Created if statements with concat for variables referring back to passwordSelection 
+  //in order to provide the computer with access to the full array of each variable
   if (uppercaseSelection) {
-    var passwordOptions = passwordOptions.concat (uppercase);
+    passwordOptions = passwordOptions.concat (uppercase);
   }
 
   if (lowercaseSelection) {
-    var passwordOptions = passwordOptions.concat (lowercase);
+    passwordOptions = passwordOptions.concat (lowercase);
   }
 
   if (numeralsSelection) {
-    var passwordOptions = passwordOptions.concat (numerals);
+    passwordOptions = passwordOptions.concat (numerals);
   }
 
   if (symbolsSelection) {
-    var passwordOptions = passwordOptions.concat (symbols);
+    passwordOptions = passwordOptions.concat (symbols);
   } 
+
   //Created loop for computer to generate random password
   var newPassword = []
   for (let i = 0; i < passwordLength; i++) {

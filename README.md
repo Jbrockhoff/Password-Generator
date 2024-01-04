@@ -24,6 +24,8 @@ https://jbrockhoff.github.io/Password-Generator/
 ## Credits
  Information and tutorials utilized to help complete this application:
 
+ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
+
  https://dev.to/code_mystery/random-password-generator-using-javascript-6a
 
  https://stackoverflow.com/questions/59340866/random-password-generator-javascript-not-working
@@ -32,7 +34,7 @@ https://jbrockhoff.github.io/Password-Generator/
 
 -httP://www.w3schools.com
 
--Net Ninja online JavaScript Tutorial for beginnger: https://www.youtube.com/playlist?list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET
+-Net Ninja online JavaScript Tutorial for Beginngers: https://www.youtube.com/playlist?list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET
 
 ## License
 

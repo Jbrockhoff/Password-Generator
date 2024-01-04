@@ -22,7 +22,11 @@ https://jbrockhoff.github.io/Password-Generator/
 
 
 ## Credits
- Information and tutorials from:
+ Information and tutorials utilized to help complete this application:
+
+ https://dev.to/code_mystery/random-password-generator-using-javascript-6a
+
+ https://stackoverflow.com/questions/59340866/random-password-generator-javascript-not-working
 
 -https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN
 

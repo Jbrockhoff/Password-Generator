@@ -64,26 +64,15 @@ function generatePassword() {
   var passwordLength = Number(prompt("Choose password length 8-128"));
 
   //Created parameters for character length and rules for no client selection
-  if (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
+  while (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
     alert("Please select a number between 8-128");
-    return;
-  } else {
-    uppercaseSelection = confirm("Include uppercase letters?");
-    lowercaseSelection = confirm("Include lowercase letters?");
-    numeralsSelection = confirm("Include numerals?");
-    symbolsSelection = confirm("Include special characters?");
+    passwordLength = Number(prompt("Choose password length 8-128"));
   }
 
-  //Created conditional statement in the event client makes no selection when prompted
-  if (
-    !uppercaseSelection &&
-    !lowercaseSelection &&
-    !numeralsSelection &&
-    !symbolsSelection
-  ) {
-    alert("Please select at least one character type");
-    return;
-  }
+  uppercaseSelection = confirm("Include uppercase letters?");
+  lowercaseSelection = confirm("Include lowercase letters?");
+  numeralsSelection = confirm("Include numerals?");
+  symbolsSelection = confirm("Include special characters?");
 
   //Created if statements with concat for variables referring back to passwordSelection
   //in order to provide the computer with access to the full array of each variable

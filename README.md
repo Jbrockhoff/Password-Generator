@@ -19,6 +19,8 @@ Here is a screenshot of my application:
 Here is a link to my deployed application:
 https://jbrockhoff.github.io/Password-Generator/
 
+Here is a link to my GitHub Repository for this application:
+https://github.com/Jbrockhoff/Password-Generator
 
 
 ## Credits

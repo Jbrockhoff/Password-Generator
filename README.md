@@ -38,6 +38,8 @@ https://github.com/Jbrockhoff/Password-Generator
 
 -Net Ninja online JavaScript Tutorial for Beginngers: https://www.youtube.com/playlist?list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET
 
+-Assistance from tutor Mila Hose with the bootcamp tutoring program
+
 ## License
 
 MIT License
